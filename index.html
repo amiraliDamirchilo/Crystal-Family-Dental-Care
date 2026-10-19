@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Crystal Family Dental Care | Umm Al Quwain</title>
+<meta name="description" content="Crystal Family Dental Care, Umm Al Quwain. Check-ups, cleaning, whitening, fillings, braces and kids' dentistry. Book on WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;600;800&family=Hanken+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+<style>
+/* Concept: crystal clear. Ice-white, glacier aqua, one deep navy. A glass tooth that clears up when you tap it. */
+:root{--ice:#F3F9FB;--white:#FFFFFF;--aqua:#4FC3D6;--glacier:#D6F1F6;--navy:#0D2B45;--mute:#5B7286;--coral:#FF7A66;--line:rgba(13,43,69,.12);
+--display:'Sora',system-ui,sans-serif;--body:'Hanken Grotesk',system-ui,sans-serif;--ease:cubic-bezier(.2,.8,.2,1)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--ice);color:var(--navy);font-family:var(--body);font-size:17px;line-height:1.6;overflow-x:hidden}
+a{color:inherit}p{max-width:56ch}
+.wrap{max-width:1220px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--display);font-weight:800;line-height:1;letter-spacing:-.04em;text-wrap:balance}
+h1 span,h2 span{font-weight:300}
+:focus-visible{outline:3px solid var(--aqua);outline-offset:3px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 24px;border-radius:16px;font-family:var(--display);font-weight:600;font-size:16px;text-decoration:none;border:0;cursor:pointer;transition:transform .25s var(--ease)}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:20px;height:20px}
+.btn-n{background:var(--navy);color:#fff}.btn-a{background:var(--aqua);color:var(--navy)}.btn-o{background:var(--white);box-shadow:inset 0 0 0 1.5px var(--line)}
+.nav{position:sticky;top:0;z-index:30;background:rgba(243,249,251,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:13px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo i{width:34px;height:34px;transform:rotate(45deg);border-radius:8px;background:linear-gradient(135deg,var(--glacier),var(--aqua));display:block}
+.logo b{font-family:var(--display);font-size:18px;display:block;line-height:1.1}
+.logo small{font-size:12px;color:var(--mute)}
+.menu{display:flex;gap:26px;font-size:15px}.menu a{text-decoration:none;color:var(--mute)}.menu a:hover{color:var(--navy)}
+.nav .btn{padding:11px 16px;font-size:14px}
+.hero{background:radial-gradient(60% 70% at 72% 40%,var(--glacier),var(--ice) 70%)}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:20px;align-items:center;padding-block:clamp(40px,6vw,80px)}
+.hero-copy{min-width:0}
+.tag{display:inline-flex;gap:8px;align-items:center;background:var(--white);border-radius:999px;padding:7px 14px;font-weight:600;font-size:14px;box-shadow:0 6px 20px rgba(13,43,69,.06)}
+.tag b{color:var(--aqua)}
+.hero h1{font-size:clamp(50px,7.4vw,112px);margin:20px 0}
+.hero .lead{font-size:clamp(17px,1.5vw,20px);color:var(--mute);max-width:38ch;margin-bottom:28px}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}
+.stage{position:relative;aspect-ratio:1/1;min-width:0}
+#tooth{position:absolute;inset:0;width:100%;height:100%;cursor:pointer}
+.ba{position:absolute;left:50%;bottom:4%;transform:translateX(-50%);display:flex;background:var(--white);border-radius:999px;padding:5px;box-shadow:0 10px 30px rgba(13,43,69,.12)}
+.ba button{border:0;background:none;font:600 14px var(--display);padding:9px 16px;border-radius:999px;cursor:pointer;color:var(--mute)}
+.ba button[aria-pressed="true"]{background:var(--navy);color:#fff}
+section{padding-block:clamp(70px,9vw,120px)}
+.hd{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,4vw,60px);align-items:end;margin-bottom:clamp(30px,4vw,50px)}
+.hd h2{font-size:clamp(40px,5.4vw,80px)}.hd p{color:var(--mute)}
+.who{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.p{background:var(--white);border-radius:28px;padding:30px;display:flex;flex-direction:column;gap:12px;min-width:0;border:1px solid var(--line)}
+.p .em{width:58px;height:58px;border-radius:18px;background:var(--glacier);display:grid;place-items:center;font-size:28px}
+.p h3{font-size:30px}.p p{color:var(--mute);font-size:16px}
+.p ul{list-style:none;display:grid;gap:8px;margin-top:6px}
+.p li{display:flex;gap:10px;font-size:16px}.p li::before{content:"";width:8px;height:8px;margin-top:9px;transform:rotate(45deg);background:var(--aqua);flex:none}
+.p .btn{margin-top:auto;align-self:flex-start}
+.clear{background:var(--navy);color:#fff}
+.clear .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,90px);align-items:center}
+.clear h2{font-size:clamp(42px,5.6vw,84px)}.clear h2 span{color:var(--aqua)}
+.clear p{color:#A8BFD1;margin-top:18px}
+.prom{display:grid;gap:12px}
+.prom div{display:grid;grid-template-columns:60px 1fr;gap:16px;align-items:center;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:18px 20px}
+.prom b{font-family:var(--display);font-size:30px;color:var(--aqua)}
+.prom h3{font-size:20px;margin-bottom:2px;letter-spacing:-.02em}.prom p{margin:0;font-size:15px}
+.kids .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(30px,6vw,90px);align-items:center}
+.kidcard{background:var(--coral);color:#fff;border-radius:32px;padding:clamp(28px,4vw,44px);transform:rotate(-1.5deg)}
+.kidcard h2{font-size:clamp(40px,5vw,72px)}
+.kidcard p{margin:16px 0 24px;font-size:18px}
+.kidcard .btn{background:#fff;color:var(--navy)}
+.faq details{border-bottom:1px solid var(--line);padding:20px 0}
+.faq summary{font-family:var(--display);font-weight:600;font-size:20px;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px}
+.faq summary::after{content:"+";color:var(--aqua);font-size:26px;line-height:1}
+.faq details[open] summary::after{content:"–"}
+.faq p{color:var(--mute);margin-top:10px}
+.book .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,80px);align-items:start}
+.book h2{font-size:clamp(42px,5.6vw,84px);margin-bottom:20px}
+.r{display:grid;grid-template-columns:110px 1fr;gap:16px;padding:14px 0;border-bottom:1px solid var(--line)}
+.r span{font-family:var(--display);font-weight:600;color:var(--aqua)}
+form{background:var(--white);border-radius:28px;padding:clamp(22px,4vw,34px);display:grid;grid-template-columns:1fr 1fr;gap:12px;box-shadow:0 30px 60px -30px rgba(13,43,69,.25);min-width:0}
+form h3{grid-column:1/-1;font-size:30px}
+label{display:grid;gap:6px;font-weight:600;font-size:14px;color:var(--mute)}
+input,select{font:inherit;font-size:16px;padding:13px 14px;border-radius:14px;border:1.5px solid var(--line);background:var(--ice);width:100%;color:var(--navy)}
+input:focus,select:focus{outline:none;border-color:var(--aqua)}
+form .btn{grid-column:1/-1;justify-content:center}
+footer{background:var(--navy);color:#A8BFD1;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;padding-block:24px}
+.dock{position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:40;transform:translateY(160%);transition:transform .5s var(--ease)}
+.dock.show{transform:none}
+@media (max-width:980px){.menu{display:none}.hero .wrap,.hd,.clear .wrap,.kids .wrap,.book .wrap{grid-template-columns:1fr}.stage{max-width:440px;width:100%;margin:0 auto}.who{grid-template-columns:1fr}}
+@media (max-width:560px){form{grid-template-columns:1fr}.r{grid-template-columns:1fr;gap:2px}.nav .btn span{display:none}.logo small{display:none}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.7 15.6 2.2 13.8 2.2 12 2.2 6.6 6.6 2.2 12 2.2c2.6 0 5.1 1 6.9 2.9 1.8 1.8 2.9 4.3 2.9 6.9 0 5.4-4.4 9.8-9.8 9.8zm8.4-18.2C18.1 1.3 15.2 0 12 0 5.5 0 .1 5.3.1 11.9c0 2.1.5 4.1 1.6 5.9L0 24l6.3-1.7c1.7.9 3.7 1.4 5.7 1.4 6.6 0 11.9-5.3 11.9-11.9 0-3.2-1.2-6.2-3.5-8.4z"/></symbol></svg>
+
+<header class="nav"><div class="wrap">
+  <a class="logo" href="#top"><i></i><span><b>Crystal</b><small>Family Dental Care</small></span></a>
+  <nav class="menu" aria-label="Main"><a href="#family">For the family</a><a href="#kids">Kids</a><a href="#faq">Questions</a><a href="#book">Book</a></nav>
+  <a class="btn btn-n wa" data-msg="Hello Crystal Family Dental Care, I'd like to book an appointment." href="#"><svg><use href="#wa"/></svg><span>Book on WhatsApp</span></a>
+</div></header>
+
+<main id="top">
+<section class="hero" style="padding:0">
+  <div class="wrap">
+    <div class="hero-copy">
+      <span class="tag"><b>◆</b>Family dentist · Umm Al Quwain</span>
+      <h1>A smile you <span>don't</span> hide in photos.</h1>
+      <p class="lead">One dental clinic for the whole family. Gentle check-ups for the kids, cleaning and whitening for you, and clear answers before any treatment.</p>
+      <div class="ctas">
+        <a class="btn btn-n wa" data-msg="Hello, I'd like to book a dental check-up." href="#"><svg><use href="#wa"/></svg>Book a check-up</a>
+        <a class="btn btn-o" href="#family">See treatments</a>
+      </div>
+    </div>
+    <div class="stage">
+      <canvas id="tooth" aria-label="A 3D crystal tooth. Switch between before and after whitening."></canvas>
+      <div class="ba" role="group" aria-label="Whitening preview"><button id="bB" aria-pressed="true">Before</button><button id="bA" aria-pressed="false">After cleaning</button></div>
+    </div>
+  </div>
+</section>
+
+<section id="family">
+  <div class="wrap">
+    <div class="hd"><h2>One clinic. <span>Every age.</span></h2><p>Bring the whole family to one place, and book everyone in one message.</p></div>
+    <div class="who">
+      <div class="p"><span class="em">🧒</span><h3>Kids</h3><p>A calm, friendly first visit, so they grow up unafraid of the dentist.</p><ul><li>First check-ups</li><li>Gentle cleaning</li><li>Cavity prevention</li></ul><a class="btn btn-a wa" data-msg="Hello, I'd like to book a check-up for my child." href="#">Book for my child</a></div>
+      <div class="p"><span class="em">🙂</span><h3>Adults</h3><p>Keep your teeth healthy and looking their best.</p><ul><li>Scaling &amp; cleaning</li><li>Fillings</li><li>Teeth whitening</li><li>Braces &amp; aligners</li></ul><a class="btn btn-a wa" data-msg="Hello, I'd like to book cleaning / whitening." href="#">Book for me</a></div>
+      <div class="p"><span class="em">👵</span><h3>Parents &amp; elders</h3><p>Comfort first, with treatment explained step by step.</p><ul><li>Root canal</li><li>Crowns &amp; bridges</li><li>Dentures</li></ul><a class="btn btn-a wa" data-msg="Hello, I'd like to book an appointment for my parent." href="#">Book for a parent</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="clear">
+  <div class="wrap">
+    <div><h2>Crystal <span>clear</span>, before we start.</h2><p>Nobody likes surprises in the dental chair. Here's what we promise every patient.</p></div>
+    <div class="prom">
+      <div><b>01</b><div><h3>We show you first</h3><p>You'll see what we see before we suggest anything.</p></div></div>
+      <div><b>02</b><div><h3>Only what you need</h3><p>No treatment you don't need. Ever.</p></div></div>
+      <div><b>03</b><div><h3>Cost told upfront</h3><p>You know the price before we begin.</p></div></div>
+      <div><b>04</b><div><h3>Gentle, always</h3><p>Tell us if you're nervous. We'll go at your pace.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="kids" id="kids">
+  <div class="wrap">
+    <div class="kidcard"><h2>Scared of the dentist? Not here.</h2><p>We make the first visit fun, short and painless, so kids actually want to come back.</p><a class="btn wa" data-msg="Hello, I'd like to book my child's first dental visit." href="#"><svg><use href="#wa"/></svg>Book their first visit</a></div>
+    <div class="faq" id="faq">
+      <details open><summary>How often should we get a check-up?</summary><p>For most people, every six months. Your dentist will tell you what's right for you.</p></details>
+      <details><summary>When should my child first see a dentist?</summary><p>Early is better. Message us your child's age and we'll advise.</p></details>
+      <details><summary>Does whitening hurt my teeth?</summary><p>Done professionally, whitening is safe. We'll check your teeth first and explain everything.</p></details>
+      <details><summary>Do you accept insurance?</summary><p>Send us your insurance provider on WhatsApp and we'll confirm.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="book" id="book">
+  <div class="wrap">
+    <div>
+      <h2>Book your visit.</h2>
+      <div class="r"><span>Where</span><div>Umm Al Quwain</div></div>
+      <div class="r"><span>For</span><div>Kids, adults and elders</div></div>
+      <div class="r"><span>Booking</span><div>WhatsApp, fastest reply</div></div>
+      <a class="btn btn-o" style="margin-top:24px" href="https://www.google.com/maps/search/?api=1&query=Crystal+Family+Dental+Care+Umm+Al+Quwain" target="_blank" rel="noopener">Get directions</a>
+    </div>
+    <form id="bk">
+      <h3>Request an appointment</h3>
+      <label for="bF">For<select id="bF"><option>Me</option><option>My child</option><option>My parent</option><option>Whole family</option></select></label>
+      <label for="bT">Treatment<select id="bT"><option>Check-up</option><option>Cleaning</option><option>Whitening</option><option>Filling</option><option>Pain / emergency</option><option>Braces</option></select></label>
+      <label for="bD">Day<input id="bD" type="date"></label>
+      <label for="bN">Name<input id="bN" type="text" autocomplete="name"></label>
+      <button class="btn btn-n" type="submit"><svg><use href="#wa"/></svg>Send on WhatsApp</button>
+    </form>
+  </div>
+</section>
+</main>
+<footer><div class="wrap"><span>© 2026 Crystal Family Dental Care · Umm Al Quwain</span><span>Family dentistry</span></div></footer>
+<div class="dock" id="dock"><a class="btn btn-n wa" data-msg="Hello, I'd like to book a dental check-up." href="#"><svg><use href="#wa"/></svg>Book a check-up</a></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function(){
+  var PHONE='971500000000'; // TODO: real WhatsApp number
+  function url(m){return 'https://wa.me/'+PHONE+'?text='+encodeURIComponent(m)}
+  document.querySelectorAll('.wa').forEach(function(a){a.href=url(a.dataset.msg);a.target='_blank';a.rel='noopener'});
+  var dock=document.getElementById('dock');addEventListener('scroll',function(){dock.classList.toggle('show',scrollY>innerHeight*.8)},{passive:true});
+  var d=document.getElementById('bD');d.value=new Date().toISOString().slice(0,10);d.min=d.value;
+  document.getElementById('bk').addEventListener('submit',function(e){e.preventDefault();var v=function(i){return document.getElementById(i).value||'-'};
+    window.open(url('Hello Crystal Family Dental Care, I\'d like to book.\nFor: '+v('bF')+'\nTreatment: '+v('bT')+'\nDay: '+v('bD')+'\nName: '+v('bN')),'_blank','noopener')});
+  var bB=document.getElementById('bB'),bA=document.getElementById('bA'),clean=0,setClean=function(v){clean=v;bB.setAttribute('aria-pressed',v?'false':'true');bA.setAttribute('aria-pressed',v?'true':'false')};
+  bB.addEventListener('click',function(){setClean(0)});bA.addEventListener('click',function(){setClean(1)});
+
+  if(!window.THREE)return;
+  var canvas=document.getElementById('tooth'),stage=canvas.parentElement;
+  try{
+    var R=new THREE.WebGLRenderer({canvas:canvas,antialias:true,alpha:true});
+    R.setPixelRatio(Math.min(devicePixelRatio,2));R.outputEncoding=THREE.sRGBEncoding;R.toneMapping=THREE.ACESFilmicToneMapping;
+    var S=new THREE.Scene(),C=new THREE.PerspectiveCamera(30,1,.1,100);C.position.set(0,0,11);
+    function col(h){return new THREE.Color(h).convertSRGBToLinear()}
+    var env=new THREE.Scene();env.add(new THREE.Mesh(new THREE.BoxGeometry(30,30,30),new THREE.MeshBasicMaterial({color:col(0xCFEAF0),side:THREE.BackSide})));
+    function panel(w,h,x,y,z,c,i){var m=new THREE.Mesh(new THREE.PlaneGeometry(w,h),new THREE.MeshBasicMaterial({color:col(c).multiplyScalar(i),side:THREE.DoubleSide}));m.position.set(x,y,z);m.lookAt(0,0,0);env.add(m)}
+    panel(12,2,0,8,4,0xffffff,3);panel(2,10,-9,0,4,0xffffff,2.2);panel(2,10,9,0,2,0x4FC3D6,2);panel(10,2,0,-8,3,0xD6F1F6,1.4);
+    var pm=new THREE.PMREMGenerator(R);S.environment=pm.fromScene(env,.02).texture;
+    var kl=new THREE.DirectionalLight(0xffffff,1);kl.position.set(3,5,6);S.add(kl);
+    // molar: crown sphere-ish + two roots, built by merging via groups
+    var mat=new THREE.MeshPhysicalMaterial({color:col(0xE8D9A8),roughness:.35,transmission:.25,thickness:1.5,ior:1.6,clearcoat:1,clearcoatRoughness:.05,sheen:.2});
+    var T=new THREE.Group();S.add(T);
+    var cg=new THREE.SphereGeometry(1.5,96,64),p=cg.attributes.position,v=new THREE.Vector3();
+    for(var i=0;i<p.count;i++){v.fromBufferAttribute(p,i);v.y*=.82;
+      if(v.y>0){var cusp=Math.cos(v.x*2.1)*Math.cos(v.z*2.1);v.y+=cusp*.22*(v.y/1.23)}
+      v.x*=1.08;p.setXYZ(i,v.x,v.y,v.z)}
+    cg.computeVertexNormals();
+    var crown=new THREE.Mesh(cg,mat);crown.position.y=.9;T.add(crown);
+    function root(x,tilt){var rp=[];for(var j=0;j<=20;j++){var t=j/20;rp.push(new THREE.Vector2(.55*(1-t*.85)+.02,-t*2.4))}
+      var m=new THREE.Mesh(new THREE.LatheGeometry(rp,48),mat);m.position.set(x,.4,0);m.rotation.z=tilt;T.add(m)}
+    root(-.62,-.14);root(.62,.14);
+    // sparkle stars
+    var sp=[];var sm=new THREE.MeshBasicMaterial({color:0xffffff,transparent:true,opacity:0});
+    for(i=0;i<10;i++){var s=new THREE.Mesh(new THREE.OctahedronGeometry(.12,0),sm.clone());s.scale.set(.4,1.6,.4);var a=i/10*6.28;s.position.set(Math.cos(a)*2.6,.6+Math.sin(a*2)*1.2,Math.sin(a)*1.2);s.userData.o=Math.random()*6;S.add(s);sp.push(s)}
+    T.position.y=.1;
+    function size(){var w=canvas.clientWidth,h=canvas.clientHeight;if(!w)return;R.setSize(w,h,false);C.aspect=w/h;C.updateProjectionMatrix()}
+    size();addEventListener('resize',size);
+    canvas.addEventListener('click',function(){setClean(clean?0:1)});
+    setTimeout(function(){if(!clean)setClean(1)},2400);
+    var k=0,mx=0,my=0,yellow=col(0xE3CC8E),white=col(0xF7FCFF);
+    addEventListener('pointermove',function(e){mx=e.clientX/innerWidth-.5;my=e.clientY/innerHeight-.5});
+    var visible=true,reduce=matchMedia('(prefers-reduced-motion: reduce)').matches,t0=performance.now();
+    new IntersectionObserver(function(es){visible=es[0].isIntersecting}).observe(stage);
+    (function loop(t){requestAnimationFrame(loop);if(!visible)return;var tt=(t-t0)/1000;
+      k+=(clean-k)*.05;
+      mat.color.copy(yellow).lerp(white,k);mat.roughness=.4-k*.3;mat.transmission=.15+k*.35;
+      sp.forEach(function(s){s.material.opacity=k*Math.max(0,Math.sin(tt*3+s.userData.o));s.rotation.y=tt*2});
+      T.rotation.y=(reduce?0:tt*.4)+mx*.6;T.rotation.x=.15+my*.3;T.position.y=.1+(reduce?0:Math.sin(tt*1.1)*.1);
+      R.render(S,C)})(t0);
+  }catch(err){console.warn(err)}
+})();
+</script>
+</body>
+</html>
